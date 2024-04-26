@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade</title>
+    <script>
+        function mult(){
+            var quant1 = parseInt(document.getElementById('idQuant1').value)
+            var valor1 = parseInt(document.getElementById('idValor1').value)
+            var quant2 = parseInt(document.getElementById('idQuant2').value) 
+            var valor2 = parseInt(document.getElementById('idValor2').value)
+            var quant3 = parseInt(document.getElementById('idQuant3').value)
+            var valor3 = parseInt(document.getElementById('idValor3').value)
+            mult0 = quant1 * valor1 + quant2 * valor2 + quant3 * valor3
+            document.getElementById('idResult').value = mult0
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h1> Quantidade </h1>
+        <label> Digite a quantidade 1: </label>
+        <input type="text" id="idQuant1" size="5">
+        <br><br>
+        <label> Digite o valor 1: </label>
+        <input type="text" id="idValor1" size="5">
+        <br><br>
+        <label> Digite a quantidade 2: </label>
+        <input type="text" id="idQuant2" size="5">
+        <br><br>
+        <label> Digite o valor 2: </label>
+        <input type="text" id="idValor2" size="5">
+        <br><br>
+        <label> Digite a quantidade 3: </label>
+        <input type="text" id="idQuant3" size="5">
+        <br><br>
+        <label> Digite o valor 3: </label>
+        <input type="text" id="idValor3" size="5">
+        <br><br>
+
+        <label> Resultado </label>
+        <input type="text" id="idResult" size="5">
+        <br><br>
+        
+        <input type="button" value="Calcular" onclick="mult()">
+</body>
+</html>

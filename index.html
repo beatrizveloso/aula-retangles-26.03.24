@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular os dois retângulos</title>
+    <script>
+        function mult(){
+            var valorA = parseInt(document.getElementById('idValorA').value)
+            var valorB = parseInt(document.getElementById('idValorB').value)
+            var valorD = parseInt(document.getElementById('idValorD').value)  
+            mult0 = valorA * valorB
+            mult1 = valorB * valorD
+            document.getElementById('idA1').value = mult0
+            document.getElementById('idA2').value = mult1
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h1> Calculadora </h1>
+        <label> Digite o valor de A: </label>
+        <input type="text" id="idValorA" size="5">
+        <br><br>
+        <label> Digite o valor de B: </label>
+        <input type="text" id="idValorB" size="5">
+        <br><br>
+        <label> Digite o valor de D: </label>
+        <input type="text" id="idValorD" size="5">
+        <br><br>
+
+        <label> A1 </label>
+        <input type="text" id="idA1" size="5">
+        <br><br>
+        <label> A2 </label>
+        <input type="text" id="idA2" size="5">
+        <br><br>
+        
+        <input type="button" value="Calcular" onclick="mult()">
+</body>
+</html>
